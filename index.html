@@ -19,7 +19,7 @@ background-size: 100% 100%;
 <body>
   <p id="message"></p>
   <script>
-      var today = new Date("Dec 02 2021");
+      <!var today = new Date("Dec 02 2021");
       let text;
       if (today == Date("Dec 02 2021")) {
         text = "This is the first message";
@@ -29,6 +29,11 @@ background-size: 100% 100%;
         text = "This is the third messsage";
       } else {
         text = "Error";
+      }>
+      const today = new Date().toDateString();
+      let text;
+      if (today === new Date(2021, 12, 02).toDateString()) {
+          text = "This is the first message"
       }
       document.getElementById("message").innerHTML = text;
   </script>
