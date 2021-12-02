@@ -19,10 +19,12 @@ background-size: 100% 100%;
 <body>
   <p id="message"></p>
   <script>
-      var d = new Date();
-      if (d = "Dec 03 2021") {
-        var words = "This is working";
-          }
+      var today = new Date();
+      if (today = "Dec 02 2021") {
+        var words = "It is today";
+      } else if (today = "Dec 03 2021") {
+        var words = "It is tomorrow";
+        }
       document.getElementById("message").innerHTML = words;
   </script>
 </body>
