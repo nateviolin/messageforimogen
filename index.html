@@ -38,7 +38,7 @@ background-size: 220% 100%;
       const today = new Date().toDateString();
       let seasondate;
       if (today === new Date(2021, 11, 18).toDateString()) {
-          seasondate = winter;
+          seasondate = "winter";
       }
       let text;
       if (today === new Date(2021, 11, 25).toDateString()) {
@@ -789,7 +789,7 @@ background-size: 220% 100%;
           text = "372";
       }
       document.getElementById("message").innerHTML = text;
-      document.getElementById("season").innerHTML = seasondate;
+      document.getElementsByClassName('season').innerHTML = seasondate;
   </script>
 </body>
 </html>
