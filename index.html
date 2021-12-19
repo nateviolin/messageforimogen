@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <style>
-body {
+.winter {
 font-family: "Bradley Hand", cursive;
 color: #B3000C;
 font-size: 70pt;
@@ -16,8 +16,23 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%;
 }
+.spring {
+font-family: "Bradley Hand", cursive;
+color: #B3000C;
+font-size: 70pt;
+    position: absolute;
+    text-align: center;
+    width: 500pt;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+background-image: url('spring backdrop.jpeg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
 </style>
-<body>
+<body class="winter">
   <p id="message"></p>
   <script>
       const today = new Date().toDateString();
