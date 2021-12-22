@@ -47,8 +47,23 @@ background-attachment: fixed;
 background-position: center bottom;
 background-size: 140% 110%;
 }
+.fall {
+font-family: "Bradley Hand", cursive;
+color: #FF4496;
+font-size: 70pt;
+    position: absolute;
+    text-align: center;
+    width: 500pt;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+background-image: url('fall backdrop.jpeg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 220% 100%;
+}
 </style>
-<body class="summer">
+<body class="fall">
   <p id="message"></p>
   <script>
       const today = new Date().toDateString();
